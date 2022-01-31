@@ -343,11 +343,6 @@
   resolved "https://registry.yarnpkg.com/@percy/env/-/env-1.0.0-beta.65.tgz#f001ec31bca634af9231d6a6e75bf2a7f4123aca"
   integrity sha512-wC31lLHyvBBwTWXUnTEm1DEWp6eH1Gwk6iLlzYaX4XMKA9Fjab99eNzBGK8CKPrI4K1LzmhrlvyUv9KXfpMofA==
 
-"@percy/logger@1.0.0-beta.63":
-  version "1.0.0-beta.63"
-  resolved "https://registry.yarnpkg.com/@percy/logger/-/logger-1.0.0-beta.63.tgz#81d4b2747859d9fdc1f2a6c06e50eddda1b9a2b1"
-  integrity sha512-iumIt1JjrZQiD9fPShbqaUtyqgRBA1crJzwhh6MPZz4s0XJLxcEzhawKzqhtOoiB8Wr5AxVygswLOkTfPcVuFg==
-
 "@percy/logger@1.0.0-beta.65":
   version "1.0.0-beta.65"
   resolved "https://registry.yarnpkg.com/@percy/logger/-/logger-1.0.0-beta.65.tgz#30a34797c935003334124e970f62914b0d124968"
@@ -504,6 +499,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.14.2.tgz#7af8ab20156586f076f4760bc1b3c5ddfffd1ff2"
   integrity sha512-dvMUE/m2LbXPwlvVuzCyslTEtQ2ZwuuFClDrOQ6mp2CenCg971719PTILZ4I6bTP27xfFFc+o7x2TkLuun/MPw==
 
+"@types/node@^17.0.4":
+  version "17.0.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.13.tgz#5ed7ed7c662948335fcad6c412bb42d99ea754e3"
+  integrity sha512-Y86MAxASe25hNzlDbsviXl8jQHb0RDvKt4c40ZJQ1Don0AAL0STLZSs4N+6gLEO55pedy7r2cLwS+ZDxPm/2Bw==
+
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
@@ -645,6 +645,16 @@
     split2 "^3.2.2"
     stream-buffers "^3.0.2"
 
+"@wdio/logger@7.16.0":
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-7.16.0.tgz#40f116ebffc23c638b8e421e350f110a058523e9"
+  integrity sha512-/6lOGb2Iow5eSsy7RJOl1kCwsP4eMlG+/QKro5zUJsuyNJSQXf2ejhpkzyKWLgQbHu83WX6cM1014AZuLkzoQg==
+  dependencies:
+    chalk "^4.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
 "@wdio/logger@7.7.0":
   version "7.7.0"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-7.7.0.tgz#cac834008b7570f3b6ae30ed731545618c51da40"
@@ -656,14 +666,14 @@
     strip-ansi "^6.0.0"
 
 "@wdio/mocha-framework@^7.0.7":
-  version "7.9.1"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.9.1.tgz#db26cc0c777eafc0b476186767c0cc9aab029f41"
-  integrity sha512-V+zTtKwKgjpOCFtlfe2L6oz6uv2rwJmSlRTsGv8sDcHPJWYWyy7RLsyU13dUSycE9dwSBJcFdyBnprjvtblnvA==
+  version "7.16.14"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.16.14.tgz#a7e406b58a73be2cd1ad7f02d4982113c6ff6687"
+  integrity sha512-NvhdOe8xliNq988ex/fT5jyMJOwibE4VA/7bUKcT+nUQPkQVtoLRiXXncUYvKi755qEY3Q+12GnGGDuIUMOY+w==
   dependencies:
     "@types/mocha" "^9.0.0"
-    "@wdio/logger" "7.7.0"
-    "@wdio/types" "7.8.0"
-    "@wdio/utils" "7.9.1"
+    "@wdio/logger" "7.16.0"
+    "@wdio/types" "7.16.14"
+    "@wdio/utils" "7.16.14"
     expect-webdriverio "^3.0.0"
     mocha "^9.0.0"
 
@@ -720,6 +730,14 @@
     easy-table "^1.1.1"
     pretty-ms "^7.0.0"
 
+"@wdio/types@7.16.14":
+  version "7.16.14"
+  resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.16.14.tgz#0ee52315a024710c2e7cbdc94343093543a02831"
+  integrity sha512-AyNI9iBSos9xWBmiFAF3sBs6AJXO/55VppU/eeF4HRdbZMtMarnvMuahM+jlUrA3vJSmDW+ufelG0MT//6vrnw==
+  dependencies:
+    "@types/node" "^17.0.4"
+    got "^11.8.1"
+
 "@wdio/types@7.8.0":
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.8.0.tgz#03ead5b8d10fb0d373bebe16a92c8c10e4e01059"
@@ -727,6 +745,15 @@
   dependencies:
     "@types/node" "^15.12.5"
     got "^11.8.1"
+
+"@wdio/utils@7.16.14":
+  version "7.16.14"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.16.14.tgz#62603bd2ac85c5f0b8d465925b6b1e0abe783ef5"
+  integrity sha512-wwin8nVpIlhmXJkq6GJw9aDDzgLOJKgXTcEua0T2sdXjoW78u5Ly/GZrFXTjMGhacFvoZfitTrjyfyy4CxMVvw==
+  dependencies:
+    "@wdio/logger" "7.16.0"
+    "@wdio/types" "7.16.14"
+    p-iteration "^1.1.8"
 
 "@wdio/utils@7.9.1":
   version "7.9.1"
